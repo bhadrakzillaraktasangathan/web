@@ -9,8 +9,8 @@
  *      (Dashboard → Settings → API)
  */
 
-const SUPABASE_URL = 'https://jmxucewjjpaqrrqtfsjf.supabase.co';
-const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImpteHVjZXdqanBhcXJycXRmc2pmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzUwMjE0NjEsImV4cCI6MjA5MDU5NzQ2MX0.3t0TTk0cb3aTuwcIPaTa1sXYYoaO5CP4EWJob5H6zaU';
+const SUPABASE_URL = 'https://ymagdeynxijohocssonj.supabase.co';
+const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InltYWdkZXlueGlqb2hvY3Nzb25qIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzgxNDc4OTMsImV4cCI6MjA5MzcyMzg5M30.w0bsCD_tJTUdFC8W27du8N7-MvUbowpiKZRP862OXcU';
 
 const _sb = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 

@@ -767,3 +767,12 @@ button:disabled {
 .w-full { width: 100%; }
 .text-center { text-align: center; }
 .hidden { display: none !important; }
+
+
+.slideshow-container { max-width: 1000px; position: relative; margin: auto; }
+.mySlides { display: none; } /* Hide images by default */
+.fade { animation: fadeEffect 1.5s; }
+
+@keyframes fadeEffect {
+  from {opacity: .4} to {opacity: 1}
+}

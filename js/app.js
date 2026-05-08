@@ -541,13 +541,13 @@ setInterval(async () => {
 }, 20000);
 
 const imagesList = [
-    {"src":"/gallery/1.jpeg","link":"","alt":"","name":"Bhadrak Zilla Rakta Sangathan"},
-    {"src":"/gallery/2.jpeg","link":"","alt":"","name":"Bhadrak Zilla Rakta Sangathan"},
-    {"src":"/gallery/3.jpeg","link":"","alt":"","name":"Bhadrak Zilla Rakta Sangathan"},
-    {"src":"/gallery/4.jpeg","link":"","alt":"","name":"Bhadrak Zilla Rakta Sangathan"},
-    {"src":"/gallery/5.jpeg","link":"","alt":"","name":"Bhadrak Zilla Rakta Sangathan"}
-    {"src":"/gallery/6.jpeg","link":"","alt":"","name":"Bhadrak Zilla Rakta Sangathan"},
-    {"src":"/gallery/7.jpeg","link":"","alt":"","name":"Bhadrak Zilla Rakta Sangathan"}
+    {"src":"gallery/1.jpeg","link":"","alt":"","name":"Bhadrak Zilla Rakta Sangathan"},
+    {"src":"gallery/2.jpeg","link":"","alt":"","name":"Bhadrak Zilla Rakta Sangathan"},
+    {"src":"gallery/3.jpeg","link":"","alt":"","name":"Bhadrak Zilla Rakta Sangathan"},
+    {"src":"gallery/4.jpeg","link":"","alt":"","name":"Bhadrak Zilla Rakta Sangathan"},
+    {"src":"gallery/5.jpeg","link":"","alt":"","name":"Bhadrak Zilla Rakta Sangathan"}
+    {"src":"gallery/6.jpeg","link":"","alt":"","name":"Bhadrak Zilla Rakta Sangathan"},
+    {"src":"gallery/7.jpeg","link":"","alt":"","name":"Bhadrak Zilla Rakta Sangathan"}
 ];
 
 function simpleSlider(selector, imagesList, options = {}) {

@@ -279,49 +279,6 @@
         </div>
       </section>
     </div><!-- max-width -->
-       <div class="slider">
-	<div class="slide-track">
-		<div class="slide">
-			<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250" alt="" />
-		</div>
-		<div class="slide">
-			<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100" width="250" alt="" />
-		</div>
-		<div class="slide">
-			<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100" width="250" alt="" />
-		</div>
-		<div class="slide">
-			<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100" width="250" alt="" />
-		</div>
-		<div class="slide">
-			<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100" width="250" alt="" />
-		</div>
-		<div class="slide">
-			<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100" width="250" alt="" />
-		</div>
-		<div class="slide">
-			<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100" width="250" alt="" />
-		</div>
-		<div class="slide">
-			<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250" alt="" />
-		</div>
-		<div class="slide">
-			<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100" width="250" alt="" />
-		</div>
-		<div class="slide">
-			<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100" width="250" alt="" />
-		</div>
-		<div class="slide">
-			<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100" width="250" alt="" />
-		</div>
-		<div class="slide">
-			<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100" width="250" alt="" />
-		</div>
-		<div class="slide">
-			<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100" width="250" alt="" />
-		</div>
-	</div>
-</div>
   </main>
      
   <!-- Footer -->
@@ -505,7 +462,7 @@
 
           <!-- Hospital Fields -->
           <div id="hospital-fields" class="hidden">
-            <div class="form-group" style="margin-bottom:16px;"><label class="form-label">Branch Name *</label><input type="text" id="reg-hospital-name" class="form-input" placeholder="City General Hospital" oninput="validateRegField('reg-hospital-name')"/></div>
+            <div class="form-group" style="margin-bottom:16px;"><label class="form-label">Hospital Name *</label><input type="text" id="reg-hospital-name" class="form-input" placeholder="City General Hospital" oninput="validateRegField('reg-hospital-name')"/></div>
             <div class="form-group" style="margin-bottom:16px;"><label class="form-label">Hospital Address *</label><input type="text" id="reg-hospital-address" class="form-input" placeholder="123 Medical District, Mumbai" oninput="validateRegField('reg-hospital-address')"/></div>
             <div class="form-group"><label class="form-label">Contact Number</label><input type="tel" id="reg-hospital-phone" class="form-input" placeholder="+91 22 1234 5678" oninput="validateRegField('reg-hospital-phone')"/></div>
           </div>
@@ -652,7 +609,7 @@
             <div class="avatar-btn" id="dash-user-avatar" onclick="toggleDropdown('dash-profile-menu')" title="Profile">A</div>
             <div class="dropdown-menu" id="dash-profile-menu">
               <div style="padding:12px 16px;border-bottom:1px solid var(--border-subtle);">
-                <p style="font-size:13px;font-weight:700;color:var(--text-primary);" id="dd-name">Alex Johnson</p>
+                <p style="font-size:13px;font-weight:700;color:var(--text-primary);" id="dd-name">Welcome</p>
                 <p style="font-size:12px;color:var(--text-muted);" id="dd-email"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="3958555c41795d5c5456175a5654">[email&#160;protected]</a></p>
               </div>
               <div class="dropdown-item" onclick="showDashTab('profile');toggleDropdown('dash-profile-menu')">
@@ -805,7 +762,7 @@
             <!-- Profile card -->
             <div class="stat-card" style="text-align:center;">
               <div style="width:72px;height:72px;border-radius:20px;background:var(--primary);display:flex;align-items:center;justify-content:center;color:white;font-size:28px;font-weight:700;margin:0 auto 14px;" id="profile-avatar-text">A</div>
-              <h4 style="font-size:17px;font-weight:700;" id="profile-full-name">Alex Johnson</h4>
+              <h4 style="font-size:17px;font-weight:700;" id="profile-full-name">Welcome</h4>
               <p style="font-size:13px;color:var(--text-muted);margin-bottom:14px;" id="profile-email-text"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="1e7f727b665e7a7b7371307d7173">[email&#160;protected]</a></p>
               <div class="blood-badge blood-badge-lg" style="margin:0 auto 16px;" id="profile-blood-badge">O-</div>
               <div style="display:flex;flex-direction:column;gap:10px;border-top:1px solid var(--border-subtle);padding-top:14px;margin-top:4px;">
@@ -820,8 +777,8 @@
               <h4 style="font-size:16px;font-weight:700;margin-bottom:20px;">Personal Information</h4>
               <div style="display:flex;flex-direction:column;gap:16px;">
                 <div class="grid-2">
-                  <div class="form-group"><label class="form-label">First Name</label><input type="text" id="edit-fname" class="form-input"/></div>
-                  <div class="form-group"><label class="form-label">Last Name</label><input type="text" id="edit-lname" class="form-input"/></div>
+                  <div class="form-group"><label class="form-label">Name</label><input type="text" id="edit-fname" class="form-input"/></div>
+                  <div class="form-group"><label class="form-label">Aadhaar No.</label><input type="text" id="edit-lname" class="form-input"/></div>
                 </div>
                 <div class="form-group"><label class="form-label">Phone</label><input type="tel" id="edit-phone" class="form-input"/></div>
                 <div class="form-group"><label class="form-label">City</label><input type="text" id="edit-city" class="form-input"/></div>

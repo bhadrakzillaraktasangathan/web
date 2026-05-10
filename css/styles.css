@@ -779,32 +779,53 @@ button:disabled {
 
 /* -------- Section: "icon slider" -------- */
 
-body {
-	align-items: center;
-	justify-content: center;
+@keyframes slide{
+  from{
+    transform:translateX(0) ;
+    
+  }
+  to{
+    transform:translateX(-100%) ;
+  
+  }
+}
+.logos{
+  overflow:hidden;
+  padding:60px 0 ;
+  background:white;
+  white-space:nowrap;
+  position:relative;
 }
 
-$animationSpeed: 40s;
-
-@keyframes scroll {
-	0% { transform: translateX(0); }
-	100% { transform: translateX(calc(-250px * 7))}
+.logos:before,
+.logos:after{
+  content:"";
+  position:absolute;
+  top:0;
+  width:250px;
+  height:100%;
+  z-index:2;
+}
+.logos:before{
+  left:0;
+  background:linear-gradient(to left, rgba(255,255,255,0), white);
+}
+.logos:after{
+  right:0;
+  background:linear-gradient(to right, rgba(255,255,255,0), white);
 }
 
-.slider {
-	height: 100px;
-	margin: auto;
-	overflow:hidden;
-	position: relative;
-	width: auto;
-	
-	.slide-track {
-		animation: scroll $animationSpeed linear infinite;
-		display: flex;
-		width: calc(250px * 14);
-	}
-	.slide {
-		height: 100px;
-		width: 250px;
-	}
+
+.logos:hover .logos-slide{
+  animation-play-state:paused;
+  
+  
+}
+.logos-slide{
+  display:inline-block;
+  animation: 35s slide infinite linear;
+}
+.logos-slide img{
+  height:50px;
+  margin: 0 40px;
 }

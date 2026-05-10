@@ -1,6 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<style>
+body {
+	align-items: center;
+	justify-content: center;
+}
+
+$animationSpeed: 40s;
+
+@keyframes scroll {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(calc(-250px * 7))}
+}
+
+.slider {
+	height: 100px;
+	margin: auto;
+	overflow:hidden;
+	position: relative;
+	width: auto;
+	
+	.slide-track {
+		animation: scroll $animationSpeed linear infinite;
+		display: flex;
+		width: calc(250px * 14);
+	}
+	.slide {
+		height: 100px;
+		width: 250px;
+	}
+}
+</style>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <meta name="description" content="BHADRAK ZILLA RAKTA SANGATHAN - Donate blood, Save lives."/>
@@ -279,6 +310,49 @@
         </div>
       </section>
     </div><!-- max-width -->
+       <div class="slider">
+	<div class="slide-track">
+		<div class="slide">
+			<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250" alt="" />
+		</div>
+		<div class="slide">
+			<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100" width="250" alt="" />
+		</div>
+		<div class="slide">
+			<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100" width="250" alt="" />
+		</div>
+		<div class="slide">
+			<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100" width="250" alt="" />
+		</div>
+		<div class="slide">
+			<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100" width="250" alt="" />
+		</div>
+		<div class="slide">
+			<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100" width="250" alt="" />
+		</div>
+		<div class="slide">
+			<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100" width="250" alt="" />
+		</div>
+		<div class="slide">
+			<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250" alt="" />
+		</div>
+		<div class="slide">
+			<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100" width="250" alt="" />
+		</div>
+		<div class="slide">
+			<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100" width="250" alt="" />
+		</div>
+		<div class="slide">
+			<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100" width="250" alt="" />
+		</div>
+		<div class="slide">
+			<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100" width="250" alt="" />
+		</div>
+		<div class="slide">
+			<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100" width="250" alt="" />
+		</div>
+	</div>
+</div>
   </main>
      
   <!-- Footer -->
@@ -417,8 +491,8 @@
         </div>
         <div style="display:flex;flex-direction:column;gap:16px;">
           <div class="grid-2">
-            <div class="form-group"><label class="form-label">First Name *</label><input type="text" id="reg-fname" class="form-input" placeholder="Alex" oninput="validateRegField('reg-fname')"/></div>
-            <div class="form-group"><label class="form-label">Last Name *</label><input type="text" id="reg-lname" class="form-input" placeholder="Johnson" oninput="validateRegField('reg-lname')"/></div>
+            <div class="form-group"><label class="form-label">Name *</label><input type="text" id="reg-fname" class="form-input" placeholder="Pravat Sutar" oninput="validateRegField('reg-fname')"/></div>
+            <div class="form-group"><label class="form-label">Aadhaar/Licence No *</label><input type="text" id="reg-lname" class="form-input" placeholder="Johnson" oninput="validateRegField('reg-lname')"/></div>
           </div>
           <div class="form-group">
             <label class="form-label">Email Address *</label>
@@ -462,7 +536,7 @@
 
           <!-- Hospital Fields -->
           <div id="hospital-fields" class="hidden">
-            <div class="form-group" style="margin-bottom:16px;"><label class="form-label">Hospital Name *</label><input type="text" id="reg-hospital-name" class="form-input" placeholder="City General Hospital" oninput="validateRegField('reg-hospital-name')"/></div>
+            <div class="form-group" style="margin-bottom:16px;"><label class="form-label">Branch Name *</label><input type="text" id="reg-hospital-name" class="form-input" placeholder="City General Hospital" oninput="validateRegField('reg-hospital-name')"/></div>
             <div class="form-group" style="margin-bottom:16px;"><label class="form-label">Hospital Address *</label><input type="text" id="reg-hospital-address" class="form-input" placeholder="123 Medical District, Mumbai" oninput="validateRegField('reg-hospital-address')"/></div>
             <div class="form-group"><label class="form-label">Contact Number</label><input type="tel" id="reg-hospital-phone" class="form-input" placeholder="+91 22 1234 5678" oninput="validateRegField('reg-hospital-phone')"/></div>
           </div>

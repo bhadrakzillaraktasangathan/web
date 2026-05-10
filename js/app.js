@@ -1,5 +1,5 @@
 /**
- * VitalFlow — Main App Controller (Supabase Edition)
+ * BHADRAK ZILLA RAKTA SANGATHAN — Main App Controller (Supabase Edition)
  * All DB calls are now async/await via the Supabase DB module.
  */
 
@@ -39,7 +39,7 @@ function showPageLoader(show) {
     el = document.createElement('div');
     el.id = 'global-loader';
     el.style.cssText = 'position:fixed;inset:0;background:rgba(255,255,255,0.85);display:flex;align-items:center;justify-content:center;z-index:9999;font-size:14px;color:#666;gap:10px;';
-    el.innerHTML = '<span class="material-symbols-outlined" style="animation:spin 1s linear infinite;font-size:24px;color:var(--primary);">progress_activity</span> Loading VitalFlow...';
+    el.innerHTML = '<span class="material-symbols-outlined" style="animation:spin 1s linear infinite;font-size:24px;color:var(--primary);">progress_activity</span> Loading...';
     document.body.appendChild(el);
   }
   el.style.display = show ? 'flex' : 'none';
@@ -299,8 +299,8 @@ async function handleRegister() {
   }
 
   window.currentUser = user;
-  await DB.addNotification(user.id, '🎉 Welcome to VitalFlow! Your account is ready. Start saving lives today.', 'success');
-  showToast('Account created! Welcome to VitalFlow 🎉', 'success');
+  await DB.addNotification(user.id, '🎉 Welcome to BHADRAK ZILLA RAKTA SANGATHAN! Your account is ready. Start saving lives today.', 'success');
+  showToast('Account created! Welcome to BHADRAK ZILLA RAKTA SANGATHAN 🎉', 'success');
   _startRealtime(user.id);
   if (regRole === 'hospital') navigateTo('hospital-dashboard');
   else navigateTo('dashboard');
@@ -389,7 +389,7 @@ async function openAcceptModal(reqId) {
     ${req.notes ? `<div style="background:#fff5f5;border-radius:8px;padding:10px 14px;margin-top:12px;border-left:3px solid var(--primary);"><p style="font-size:12px;color:var(--text-secondary);">${escHtml(req.notes)}</p></div>` : ''}
   `;
   document.getElementById('modal-directions').textContent =
-    `Head to ${req.hospital}, ${req.address}. Call ${req.contact} on arrival and mention VitalFlow. Ask for the blood bank counter.`;
+    `Head to ${req.hospital}, ${req.address}. Call ${req.contact} on arrival and mention BHADRAK ZILLA RAKTA SANGATHAN. Ask for the blood bank counter.`;
 
   const arr = new Date(Date.now() + 45 * 60000);
   document.getElementById('modal-arrival-time').value = arr.toISOString().slice(0, 16);
